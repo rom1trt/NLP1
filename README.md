@@ -1,2 +1,3 @@
 # NLP1
-See later...
+
+Libraries used : numpy, pandas, scikit-learn (sklearn)
