@@ -4,14 +4,13 @@ Libraries used : numpy, pandas, scikit-learn (sklearn)
 
 With first dataset (80 - 20 split)
 
-| Classifier               | F1 Score |
+| Model               | F1 Score |
 |--------------------------|----------|
 | Feedforward Neural Network |          |
 | Logistic Regression       |          |
-| N-grams                   |          |
+| N-grams                   |     N/A     |
 | Naive Bayes Classifier    |     69%     |
 | Recurrent Neural Network  |          |
-| TF-IDF                    |          |
-| Tokenizer (Regex)         |          |
+| TF-IDF                    |     N/A     |
 | Transformer               |          |
 | Word2Vec                  |          |
