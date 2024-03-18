@@ -1,3 +1,3 @@
-# Classifies between "Liberal" and "Conservative" using the title of the post
+# Classifies between AI generated and human generated
 ## Possible improvement : Use text and more information?
-## F1-Score : 69%, bad F1-score for Conservative classification (38%), decent for Liberal (79%)
+## F1-Score : 95%
