@@ -9,7 +9,7 @@ With first dataset (80 - 20 split)
 | Feedforward Neural Network | | |
 | Logistic Regression | | |
 | N-grams | N/A | |
-| Naive Bayes Classifier | 69% | Currently only using Title for classification, try with text and other information? |
+| Naive Bayes Classifier |  |  |
 | Recurrent Neural Network | | |
 | TF-IDF | N/A | |
 | Transformer | | |
