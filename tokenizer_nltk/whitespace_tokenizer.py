@@ -8,13 +8,13 @@ import sklearn.model_selection
 data = pd.read_csv('../_data/Reviews.csv') # Loading the dataset
 X_train, X_test, y_train, y_test = sk.model_selection.train_test_split(data['Text'], data['Score'], test_size=0.2) # Splitting in test and training sets
 
-X_train_reduced = X_train[:len(X_train) // 5] # reducing the length of the training set to a fifth of the original size
-X_test_reduced = X_test[:len(X_test) // 5] # reducing the length of the testing set to a fifth of the original size
+X_train = X_train[:len(X_train) // 5] # reducing the length of the training set to a fifth of the original size
+X_test = X_test[:len(X_test) // 5] # reducing the length of the testing set to a fifth of the original size
 
-text_strings_train = " ".join(X_train_reduced) # Put every rows in the training set in one string, separated by a whitespace
+text_strings_train = " ".join(X_train) # Put every rows in the training set in one string, separated by a whitespace
 sents_train = sent_tokenize(text_strings_train) # Tokenize by sentences
 
-text_strings_test = " ".join(X_test_reduced) # Put every rows in the testing set in one string, separated by a whitespace
+text_strings_test = " ".join(X_test) # Put every rows in the testing set in one string, separated by a whitespace
 sents_test = sent_tokenize(text_strings_test) # Tokenize by sentences
 
 token_train = [nltk.tokenize.WhitespaceTokenizer().tokenize(s) for s in sents_train] # whitespace tokenizer -> all parenthesis and punctuation aren't separated from the words
