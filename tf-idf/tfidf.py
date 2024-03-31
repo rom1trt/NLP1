@@ -14,13 +14,12 @@ class TFIDFVectorizer:
     def _compute_term_frequencies(self, corpus, N):
         term_frequencies = {}
         for doc_index, doc in enumerate(corpus):
-            term_counts = Counter(doc.split())
+            term_counts = Counter(doc)
             for term, count in term_counts.items():
                 if term not in term_frequencies:
                     term_frequencies[term] = [0] * N
                 term_frequencies[term][doc_index] = count
         return term_frequencies
-
 
     def _compute_scores(self, term_frequencies, N):
         tfidf_scores = {}
