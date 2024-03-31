@@ -4,9 +4,9 @@ Un modèle RNN (Recurrent Neural Network) a été entraîné sur 10000 avis text
 Les principales étapes et détails du modèle sont :
 
 - Prétraitement du texte : 
- - Mise en minuscules
- - Suppression de la ponctuation
- - Filtrage des mots vides
+    - Mise en minuscules
+    - Suppression de la ponctuation
+    - Filtrage des mots vides
 
 - Tokenization et encodage :
     - Tokenisation du texte en mots 
