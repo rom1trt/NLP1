@@ -29,7 +29,6 @@ The top k approach selects one of the k most probable tokens at each step, consi
 - Implementing Laplace smoothing to handle unseen n-grams effectively.
 
 # Pistes d’améliorations
-- Incorporating more sophisticated language models like LSTM or Transformer.
 - Experimenting with different smoothing techniques to handle unseen n-grams more effectively.
 - Exploring techniques to capture long-range dependencies in the text data more accurately.
 
