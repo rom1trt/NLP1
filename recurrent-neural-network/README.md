@@ -28,7 +28,7 @@ Les principales étapes et détails du modèle sont :
     - Batch size : 128
     - Validation split : 0.2
 
-Ce modèle RNN atteint une accuracy de 99.8% sur l'ensemble de test, permettant de prédire très efficacement le score (entre 1 et 5) associé à un avis textuel. Les couches LSTM permettent de bien capturer les dépendances à long-terme dans les séquences de mots.
+Ce modèle RNN atteint une accuracy de 78.3% sur l'ensemble de test, permettant de prédire assez efficacement le score (entre 1 et 5) associé à un avis textuel. Les couches LSTM permettent de bien capturer les dépendances à long-terme dans les séquences de mots.
 
 ## Pistes d'amélioration
 
