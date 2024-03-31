@@ -9,24 +9,24 @@ Les principales étapes et détails du modèle sont :
  - Filtrage des mots vides
 
 - Tokenization et encodage :
- - Tokenisation du texte en mots 
- - Encodage en séquences d'entiers via `Tokenizer` de Keras
- - Vocabulaire de taille 10000 (`max_features`)
- - Séquences paddées à une longueur de 100 (`max_length`)
+    - Tokenisation du texte en mots 
+    - Encodage en séquences d'entiers via `Tokenizer` de Keras
+    - Vocabulaire de taille 10000 (`max_features`)
+    - Séquences paddées à une longueur de 100 (`max_length`)
 
 - Architecture du modèle : 
- - Couche d'embedding : `Embedding(max_features, 32)`
- - 3 couches LSTM empilées : `LSTM(16, return_sequences=True)`, `LSTM(16, return_sequences=True)`, `LSTM(16)`  
- - Couche dense intermédiaire : `Dense(64, activation='relu')` 
- - Couche de dropout : `Dropout(0.5)`
- - Couche de sortie : `Dense(5, activation='softmax')`
+    - Couche d'embedding : `Embedding(max_features, 32)`
+    - 3 couches LSTM empilées : `LSTM(16, return_sequences=True)`, `LSTM(16, return_sequences=True)`, `LSTM(16)`  
+    - Couche dense intermédiaire : `Dense(64, activation='relu')` 
+    - Couche de dropout : `Dropout(0.5)`
+    - Couche de sortie : `Dense(5, activation='softmax')`
 
 - Entraînement : 
- - Optimiseur : Adam
- - Loss : categorical cross-entropy
- - Métrique : accuracy
- - Batch size : 128
- - Validation split : 0.2
+    - Optimiseur : Adam
+    - Loss : categorical cross-entropy
+    - Métrique : accuracy
+    - Batch size : 128
+    - Validation split : 0.2
 
 Ce modèle RNN atteint une accuracy de 99.8% sur l'ensemble de test, permettant de prédire très efficacement le score (entre 1 et 5) associé à un avis textuel. Les couches LSTM permettent de bien capturer les dépendances à long-terme dans les séquences de mots.
 
