@@ -39,8 +39,4 @@ comparison of TF-IDF results and other methods
 
 ### Analysis:
 
-Compared to the provided results, your results seem to be less favorable in terms of precision, recall, and F1 score for most classes. However, the overall accuracy of your models is slightly lower than that of the provided results.
-
-### Conclusion:
-
-Although your results are not as good as those provided in terms of precision, recall, and F1 score, they are still relatively close. It may be necessary to explore other approaches or adjust model parameters to improve performance. Additionally, a deeper analysis of specific misclassification errors can help identify areas where the models need improvement.
+TFIDF results seem to be less favorable in terms of precision, recall, and F1 score for most classes.
