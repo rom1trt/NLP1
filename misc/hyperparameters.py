@@ -12,7 +12,6 @@ def grid_search(model, param_grid, scoring, X_train, y_train, cv=5, verbose=1, n
     grid_search = GridSearchCV(estimator=model, param_grid=param_grid, cv=cv, scoring=scoring, verbose=verbose, n_jobs=n_jobs)
     grid_search.fit(X_train, y_train)
     return grid_search
-# combined_scorer = make_scorer(custom_score)
 
 def grid_search_predict(grid_search):
     best_params = grid_search.best_params_
