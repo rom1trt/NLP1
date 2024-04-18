@@ -1,5 +1,5 @@
 # Configuration #1
 
-##Tokenizer : NLTK
+## Tokenizer : NLTK
 
-##Vectorizer : TF-IDF
+## Vectorizer : TF-IDF
