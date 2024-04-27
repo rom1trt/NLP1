@@ -2,9 +2,9 @@ from sklearn.metrics import make_scorer, precision_score, recall_score, f1_score
 from sklearn.model_selection import GridSearchCV, RandomizedSearchCV
 
 def custom_score(gt, y_pred):
-    precision = precision_score(gt, y_pred)
-    recall = recall_score(gt, y_pred)
-    f1 = f1_score(gt, y_pred)
+    precision = precision_score(gt, y_pred, average='macro')
+    recall = recall_score(gt, y_pred, average='macro')
+    f1 = f1_score(gt, y_pred, average='macro')
     combined_score = precision + recall + f1
     return combined_score
 
