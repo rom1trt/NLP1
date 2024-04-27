@@ -1,5 +1,5 @@
-# Configuration #1
+# Configuration #3
 
-## Tokenizer : NLTK
+## Tokenizer : WordPiece (SpaCy)
 
-## Vectorizer : TF-IDF
+## Vectorizer : Word2Vec
