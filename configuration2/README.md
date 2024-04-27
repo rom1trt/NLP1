@@ -1,5 +1,5 @@
-# Configuration #1
+# Configuration #2
 
-## Tokenizer : NLTK
+## Tokenizer : BPE
 
-## Vectorizer : TF-IDF
+## Vectorizer : CountVectorizer
