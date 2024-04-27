@@ -10,6 +10,7 @@ import tiktoken
 
 nltk.download('punkt')
 nltk.download('stopwords')
+nltk.download('wordnet')
 
 def tokenizer(X):
     stop_words = set(stopwords.words('english'))
