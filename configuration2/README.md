@@ -1,5 +1,5 @@
 # Configuration #2
 
-## Tokenizer : BPE
+## Tokenizer : Byte Pair Encoding (BPE)
 
-## Vectorizer : CountVectorizer
+## Vectorizer : CountVectorizer (Bag of Words)
