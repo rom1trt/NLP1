@@ -79,7 +79,7 @@ perplexity on test data : 3045
 
 
 
-We have implemented 2 ways to do text generation using the n-grams, a grredy method taking the next most probable token and the to k method, choosing the next token among the top k token (the more probable they were to be the next token, the more probably they will be picked)
+We have implemented 2 ways to do text generation using the n-grams, a greedy method taking the next most probable token and the to k method, choosing the next token among the top k token (the more probable they were to be the next token, the more probably they will be picked)
 ## Greedy vs top k
 
 The top k approach outperforms the Greedy approach in several aspects. Firstly, top k avoids the issue of looping, which is common in the Greedy approach, especially when encountering repetitive patterns in the data. Additionally, top k introduces variation into the generated sequences since it randomly selects from the top k most probable tokens, resulting in different outputs for the same input context. On the other hand, the Greedy approach tends to produce predictable outputs, often copying existing patterns in the data. 
