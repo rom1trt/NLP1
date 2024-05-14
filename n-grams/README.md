@@ -1,7 +1,7 @@
 ## Results Analysis:
 n is the n-gram
 k is the applied smoothing
-The first 100K texts of the dataset were used (we get aroung 7 millions tokens). 
+The first 100K texts of the dataset were used (we get around 7 millions tokens). 
 # Normal tokenizer (split by space)
 n=2 k=1
 perplexity on train data : 4016
